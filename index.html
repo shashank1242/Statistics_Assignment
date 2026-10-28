@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Discrete Probability Distributions</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;700&family=Archivo+Black&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a class="brand" href="#home">
+        <span class="mark">DPD&reg;</span>
+        <span class="brand-name">Discrete Probability Distributions</span>
+        <span class="scope">AIML Lab / Rev 3.0</span>
+      </a>
+      <nav aria-label="Distributions">
+        <a href="#home" data-page="home">Home</a>
+        <a href="#binomial" data-page="binomial">Binomial</a>
+        <a href="#poisson" data-page="poisson">Poisson</a>
+        <a href="#geometric" data-page="geometric">Geometric</a>
+      </nav>
+    </div>
+    <div class="hazard" aria-hidden="true"></div>
+  </header>
+
+  <main>
+    <!-- Home -->
+    <section id="page-home" class="page">
+      <div class="title-row">
+        <p class="meta">Unit / D-00 &nbsp;/// Index</p>
+        <h1>Discrete probability distributions</h1>
+        <p class="subline">Compute probabilities, summary statistics and the probability mass function for three common distributions.</p>
+        <dl class="byline">
+          <div><dt>Prepared by</dt><dd>Shashank P</dd></div>
+          <div><dt>Course</dt><dd>AIML Laboratory</dd></div>
+        </dl>
+      </div>
+
+      <div class="dist-list">
+        <a class="dist" href="#binomial">
+          <span class="dist-unit">D-01</span>
+          <span class="dist-glyph">B</span>
+          <h2>Binomial</h2>
+          <p class="notation"><var>X</var> ~ B(<var>n</var>, <var>p</var>)</p>
+          <p>Number of successes in <var>n</var> independent trials, each with success probability <var>p</var>.</p>
+          <span class="dist-action">Open &gt;&gt;&gt;</span>
+        </a>
+        <a class="dist" href="#poisson">
+          <span class="dist-unit">D-02</span>
+          <span class="dist-glyph">P</span>
+          <h2>Poisson</h2>
+          <p class="notation"><var>X</var> ~ Pois(<var>&lambda;</var>)</p>
+          <p>Number of events in a fixed interval, occurring at an average rate <var>&lambda;</var>.</p>
+          <span class="dist-action">Open &gt;&gt;&gt;</span>
+        </a>
+        <a class="dist" href="#geometric">
+          <span class="dist-unit">D-03</span>
+          <span class="dist-glyph">G</span>
+          <h2>Geometric</h2>
+          <p class="notation"><var>X</var> ~ Geom(<var>p</var>)</p>
+          <p>Number of trials up to and including the first success, with success probability <var>p</var>.</p>
+          <span class="dist-action">Open &gt;&gt;&gt;</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- Filled in by js/dist-page.js from the configs in js/pages.js -->
+    <section id="page-binomial" class="page"></section>
+    <section id="page-poisson" class="page"></section>
+    <section id="page-geometric" class="page"></section>
+  </main>
+
+  <script src="js/distributions.js"></script>
+  <script src="js/dist-page.js"></script>
+  <script src="js/pages.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

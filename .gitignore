@@ -1,0 +1,12 @@
+# Local Claude Code skills and tool output
+.claude/
+.taste-skill/
+
+# OS / editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Node
+node_modules/
